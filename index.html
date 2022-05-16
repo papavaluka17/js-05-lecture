@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/global.css" />
+    <script
+      src="https://kit.fontawesome.com/81cddf3ff5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="#"><img src="./images/logo.png" alt="logo" /></a>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="login">
+          <button onclick="modal()">Log in</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="s-1">
+      <div class="started">
+        <button>Get started</button>
+      </div>
+      <div class="form-box display-none" id="box">
+        <button onclick="modal()">X</button>
+        <h2>Log in</h2>
+
+        <div class="soc-icon">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-google"></i></a>
+        </div>
+        <form action="submit" id="form2">
+          <input type="email" name="email" placeholder="Email" class="input" />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            class="input"
+          />
+          <p id="error"></p>
+
+          <button>Log in</button>
+        </form>
+      </div>
+    </section>
+
+    <div style="margin: 50px 0 50px 100px;">
+      <form action="" id="form5">
+        <input type="text" id="input2">
+        <button id="btn"> button</button>
+      </form>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
